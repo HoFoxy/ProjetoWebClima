@@ -12,34 +12,32 @@ body {
     background-size: cover;
 }
 
-nav{
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(0, 161, 3);
+
+header {
+  display: flex;
+  background-color: #00ff00;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
+nav ul {
+  list-style-type: none;
+  background-color: #333;
+  overflow: hidden;
 }
 
-nav ul li{
-    padding: 4px;
-    border: 3px ridge rgb(2, 83, 25);
-    color: rgb(2, 54, 17);
-    list-style: none;
-    background-color: #d5f9db;
+nav ul li {
+  float: left;
 }
 
-#logo{
-    width: 15%;
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
+
   
 main {
     padding: 20px;
