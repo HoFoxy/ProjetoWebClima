@@ -74,6 +74,9 @@ body {
     justify-content: space-around;
     align-items: center;
   }
+  .titulo{
+    color: rgb(42, 131, 42)
+  }
 
 
   
