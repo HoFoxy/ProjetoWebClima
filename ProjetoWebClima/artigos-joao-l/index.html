@@ -4,28 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../frontPage-Gesley/style.css">
     <script src="script.js" defer></script>
     <title>AgroTech</title>
 </head>
 
 <body>
+    <div class="background-layer"></div>
     <header>
-        <h1>AgroTech</h1>
+        <h1 class="titulo">AgroTech</h1>
     </header>
 
-        <nav>
-            <ul>
-                <li><a href="#">Logo</a></li>
-                <li><a href="#">Previsão</a></li>
-                <li><a href="#">Cidades</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    
-    <main>
-        
+    <nav>
+        <ul>
+            <li><a href="../frontPage-Gesley/index.html">Logo</a></li>
+            <li><a href="../clima-nome/index.html">Previsão</a></li>
+            <li><a href="../artigos-nome/index.html">Notícias</a></li>
+            <li><a href="../mapa-nome/index.html">Mapa</a></li>
+            <li><a href="../sobreOProj-joao-m/index.html">Sobre nós</a></li>
+        </ul>
+    </nav>
 
+    <main>
+        <section id="weather-section">
+            <h2>Previsão do tempo</h2>
+            <div id="weather-data"></div>
+        </section>
+
+        <section>
+            <h2>Cidades</h2>
+            <ul id="city-list">
+                <li><a href="#" onclick="getWeather('Sorocaba')">Sorocaba</a></li>
+                <li><a href="#" onclick="getWeather('Votorantim')">Votorantim</a></li>
+                <li><a href="#" onclick="getWeather('Araçoiaba da Serra')">Araçoiaba da Serra</a></li>
+                <li><a href="#" onclick="getWeather('Piedade')">Piedade</a></li>
+            </ul>
+        </section>
+
+        <section>
+
+        </section>
     </main>
 
     <footer>
