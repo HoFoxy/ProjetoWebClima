@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../frontPage-Gesley/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>AgroTech</title>
 </head>
@@ -26,31 +26,31 @@
     </nav>
 
     <main>
-        <section id="weather-section">
-            <h2>Previsão do tempo</h2>
-            <div id="weather-data"></div>
-        </section>
 
-        <section>
-            <h2>Cidades</h2>
-            <ul id="city-list">
-                <li><a href="#" onclick="getWeather('Sorocaba')">Sorocaba</a></li>
-                <li><a href="#" onclick="getWeather('Votorantim')">Votorantim</a></li>
-                <li><a href="#" onclick="getWeather('Araçoiaba da Serra')">Araçoiaba da Serra</a></li>
-                <li><a href="#" onclick="getWeather('Piedade')">Piedade</a></li>
-            </ul>
-        </section>
+        <div class="noticia">          
+                <img src="img/noticia01.webp" alt="uma imagem aí" class="imgnot">
+            <a href="https://revistaoeste.com/agronegocio/agropecuaria-faz-o-pib-do-brasil-crescer/" target="_blank">
+                <h3 class="titulonot">Agropecuária faz o PIB do Brasil crescer</h3>
+                <span>Setor registrou o maior crescimento trimestral desde 1996</span> 
+            </a>
+                           
+        </div>
 
-        <section>
+        <div class="noticia">          
+            <img src="img/noticia02.webp" alt="uma imagem aí" class="imgnot">
+        <a href="https://revistaoeste.com/agronegocio/sauditas-investem-r-2-bilhoes-em-gigante-do-agronegocio-brasileiro/" target="_blank">
+            <h3 class="titulonot">Sauditas investem 2 bilhoes em gigante do agronegócio brasileiro</h3>
+            <span>Setor registrou o maior crescimento trimestral desde 1996</span>
+        </a>          
+        </div>
 
-        </section>
     </main>
 
     <footer>
-        <section>
+        <section id="copyr">
             <p>&copy; 2023 Fatec Votorantim. Todos os direitos reservados.</p>
         </section>
-        <section>
+        <section id="contato">
             <h2>Contato</h2>
             <p>Entre em contato conosco para tirar dúvidas ou enviar sugestões.</p>
             <p>Email: contato@climatologia.com</p>

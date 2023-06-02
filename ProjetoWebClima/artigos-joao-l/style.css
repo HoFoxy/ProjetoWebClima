@@ -108,3 +108,30 @@ footer {
 .titulo{
   color: #24814b;
 }
+
+.noticia a:link{
+  text-decoration: none;
+  height: fit-content;
+}
+
+
+.noticia h3{
+  margin: 0px;
+}
+
+.titulonot{
+  color: #000000;
+  height: fit-content;
+  width: max-content;
+}
+
+.noticia{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgnot{
+  margin: 0px 3px 5px 0px;
+  width: 15%;
+  border: #555 2px solid;
+}
