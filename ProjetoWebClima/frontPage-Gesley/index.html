@@ -5,14 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+                integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="script.js" defer></script>
     <title>AgroTech</title>
 </head>
-
 <body>
-    <div class="background-layer"></div>
     <header>
+        <div class="background-layer"></div>
+        <div>
         <h1 class="titulo">AgroTech</h1>
+        </div>
+        <div>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                  </form>
+                </div>
+              </nav>
+        </div>
+            
     </header>
 
     <nav>
@@ -21,7 +35,8 @@
             <li><a href="../clima-nome/index.html">Previsão</a></li>
             <li><a href="../artigos-nome/index.html">Notícias</a></li>
             <li><a href="../mapa-nome/index.html">Mapa</a></li>
-            <li><a href="../sobreOProj-joao-m/index.html">Sobre nós</a></li>
+            <li><a href="../sobreOProj-joao-m/index.html">Sobre Nós</a></li>
+            
 
         </ul>
     </nav>
@@ -43,7 +58,46 @@
         </section>
 
         <section>
-
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="img/sor1.png"card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sorocaba</h5>
+                      <p class="card-text">Max. / Mín.      --/12°</p>
+                      <p class="card-text">Umidade             93%</p>
+                      <p class="card-text">Pressão       1021.7 mb</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="img/vot1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Votorantim</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="img/ara1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Araçoiaba da Serra</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="img/pied1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Piedade</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
     </main>
 
