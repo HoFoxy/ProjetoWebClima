@@ -1,26 +1,31 @@
-.noticia a:link{
-  text-decoration: none;
-  height: fit-content;
-}
-
-
-.noticia h3{
-  margin: 0px;
-}
-
-.titulonot{
-  color: #000000;
-  height: fit-content;
-  width: max-content;
-}
-
-.noticia{
+#noticias{
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#imagens{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing:content-box;
+  width: 15%;
+}
+
+#frases{
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
 .imgnot{
   margin: 0px 3px 5px 0px;
-  width: 15%;
+  width: 25%;
   border: #555 2px solid;
+}
+
+.noticias{
+  display: flex;
 }
