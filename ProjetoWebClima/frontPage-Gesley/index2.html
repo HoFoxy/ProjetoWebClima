@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="script.js" defer></script>
+    <title>AgroTech</title>
+</head>
+<body>
+    <header>
+        <div class="background-layer"></div>
+        <div>
+        <h1 class="titulo">AgroTech</h1>
+        </div>  
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../frontPage-Gesley/index.html">Início</a></li>
+            <li><a href="../clima-Fabio/index.html">Previsão</a></li>
+            <li><a href="../artigos-joao-l/index.html">Notícias</a></li>
+            <li><a href="../mapa-vinicius/index.html">Mapa</a></li>
+            <li><a href="../sobreOProj-joao-m/index.html">Sobre Nós</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="weather-section">
+            <h2>Previsão do tempo</h2>
+            <div id="weather-data"></div>
+        </section>
+        <section>
+            <div>
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar a Cidade" aria-label="Search" id="verificarClima" >
+                        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                      </form>
+                    </div>
+                  </nav>
+            </div>   
+        </section>
+        <section>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="img/sor1.png" card-img-top alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" id="nome">Sorocaba</h5>
+                      <p class="card-text" id="tempMax">Max. / Mín.      --/12°</p>
+                      <p class="card-text" id="umidade">Umidade             93%</p>
+                      <p class="card-text" id="pressao">Pressão       1021.7 mb</p>
+                    </div>
+                  </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <p>&copy; 2023 Fatec Votorantim. Todos os direitos reservados.</p>
+        </section>
+        <section>
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para tirar dúvidas ou enviar sugestões.</p>
+            <p>Email: contato@climatologia.com</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

@@ -110,3 +110,7 @@ body {
   .titulo{
     color: #24814b;
   }
+
+  .bg-body-tertiary{
+    width: 23%;
+  }
