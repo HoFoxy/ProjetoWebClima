@@ -42,7 +42,7 @@
 
 .img{
   width: 20%;
-  border: 3px ridge rgb(11, 255, 11);
+  border: 3px ridge  #1b5c36;
 }
 
 .notimg{
