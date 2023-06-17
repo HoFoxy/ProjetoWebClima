@@ -48,3 +48,21 @@
 .notimg{
   padding-bottom: 10px;
 }
+
+#link1{
+ text-decoration: none;
+ color: black;
+}
+
+#link2{
+  text-decoration: none;
+  color: black;
+ }
+
+#link1:hover{
+  color: #1b5c36;
+}
+
+#link2:hover{
+  color: #1b5c36;
+}
