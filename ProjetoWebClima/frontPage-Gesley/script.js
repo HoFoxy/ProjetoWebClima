@@ -31,5 +31,8 @@ document.querySelector("#btnVerificarClima").addEventListener("click", async (e)
     document.querySelector('#vento').innerHTML = `Vento: ${vento} km/h`
     document.querySelector('#tempo').innerHTML = `Tempo: ${tempo}`
     document.querySelector('#fotoClima').setAttribute('src', apiBDImagemUnsplash+tempo);
+    if (tempo === "céu limpo"){
+        document.querySelector("#imagemEntrada").setAttribute("src", "img/ara1.png")
+    }
 });
 
