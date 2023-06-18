@@ -21,8 +21,9 @@ document.querySelector("#verificarClima").addEventListener("click", async (e) =>
     document.getElementById("imgPais").setAttribute("src", apiBandeiraPais+data.sys.country);
     temperatura.innerText = parseFloat(data.main.temp)+ "º";
     humidade.innerText = parseFloat(data.main.humidity)+ "%";
-    vento.innerText = parseFloat(data.wind.speed)+ "km/h" 
+    vento.innerText = parseFloat(data.wind.speed)+ "km/h";
     tempo.innerText = data.weather[0].description; 
+    nome = 
     document.getElementById("cidadeTemp").innerText = cidade;
     document.getElementById("icone").setAttribute("src",`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`); 
     document.getElementById("imgPais").setAttribute("src", apiBandeiraPais+data.sys.country+"/flat/64.png");
