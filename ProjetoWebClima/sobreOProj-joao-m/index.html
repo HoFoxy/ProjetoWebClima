@@ -5,20 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../frontPage-Gesley/style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="../frontPage-Gesley/script.js" defer></script>
     <title>AgroTech</title>
 </head>
 
 <body>
-    <div class="background-layer"></div>
     <header>
+        <div class="background-layer"></div>
+        <div>
         <h1 class="titulo">AgroTech</h1>
+        </div>
+        <div>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                  </form>
+                </div>
+              </nav>
+        </div>
+            
     </header>
 
     <nav>
         <ul>
-            <li><a href="../frontPage-Gesley/index.html">Logo</a></li>
-            <li><a href="../clima-Fabio/index.html ">Previsão</a></li>
+            <li><a href="../frontPage-Gesley/index.html">Início</a></li>
+            <li><a href="../clima-Fabio/index.html">Previsão</a></li>
             <li><a href="../artigos-joao-l/index.html">Notícias</a></li>
             <li><a href="../mapa-vinicius/index.html">Mapa</a></li>
             <li><a href="../sobreOProj-joao-m/index.html">Sobre nós</a></li>
@@ -32,8 +48,9 @@
         </section>
 
         <section id="topicos">
+            <div id="wrapper-topic">
             <h2 id="ideia">Ideia</h2>
-            <p class="topicos"><b>
+            <p>
                 A AgroTech surgiu como uma ideia alternativa aos sistemas desatualizados e caros de análise climática.
                 Temos como propósito oferecer a todos públicas uma forma de consultar dados climáticos com precisão e
                 qualidade e claro, a todo momento.
@@ -41,17 +58,17 @@
                 Possuímos nosso programa 'Clima no Agro' no qual oferecemos um enfoque maior nos pequenos e médios
                 agricultores que necessitam do nosso serviço como instalação de equipamentos, processamento de dados,
                 monitoramento climático e do solo.
-                </b>
+                
             </p>
             <h2 id="sobre-nos">Sobre nós</h2>
-            <p class="topicos"><b> 
+            <p>
                 Atualmente nossa equipe é composta por 5 pessoas que fundaram a empresa e desenvolveram o site.
                 Todos possuem habilidade e a vontade necessária para oferecer um serviço de excelência para todos
                 nossos usuários, independendo de desafios e possíveis obstáculos que possam vir a existir.
-                </b>
+                
             </p>
             <h2 id="tecnologias">Tecnologias</h2>
-            <p class="topicos"><b>
+            <p>
                 Nosso software, desenvolvido em conjunto com os cliente para que possamos idealizar todas as necessidades
                 que eles possuem, é completamente inovador e extremamente atualizado. Utilizamos ferramentas de ponta para
                 garantir a qualidade de nossa análise e processamento de dados.
@@ -59,17 +76,25 @@
                 Em breve, buscaremos parcerias com universidades, empresas públicas e privadas para uma expansão na nossas
                 área de cobertura, além disso estamos nos preparando para a compra e instalação de diversos equipamento
                 meteorológicos
-                </b>
+                
             </p>
             <h2 id="clima-agro">Clima no Agro</h2>
-            <p class="topicos"><b>
+            <p>
                 O programa Clima no Agro é uma iniciativa da AgroTech que visa oferecer suporte, equipamento e monitoramento
-                de ponta para todo e qualquer agricultor da região de Sorocaba, São Paulo.
+                de ponta para todo e qualquer agricultor da região de Sorocaba, SP.
                 <br>
                 Fazemos orçamentos sem compromisso algum e auxiliarmos em qualquer que seja a dúvida sua! Conte com a AgroTech para
                 garantir a melhor produção no campo!
-                </b>
+                
             </p>
+            </div>
+            <div id="wrapper-img">
+                <figure><img src="img/nuvens-campo.webp" alt="Nuvems no campo"></figure>
+                <figure><img src="img/weather-station.jpg" alt="Estação do tempo"></figure>
+                <figure><img src="img/ceu-cinza.jpg" alt="Céu nublado" style="height: 250px;"></figure>
+                <figure><img src="img/paisagem-campo.avif" alt="Paisagem"></figure>
+            </div>
+
         </section>
 
         <section>
