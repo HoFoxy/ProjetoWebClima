@@ -16,7 +16,8 @@ document.querySelector("#btnVerificarClima").addEventListener("click", async (e)
         alert("Cidade Inválida")
         return
     }
-    document.querySelector("#nomeCidade").innerHTML = cidade;
+    const title = cidade;
+    document.querySelector("#nomeCidade").innerHTML = title[0].toUpperCase() + title.substring(1);;
     let temperatura = parseFloat(data.main.temp);
     let temperaturaMin = parseFloat(data.main.temp_min);
     let temperaturaMax = parseFloat(data.main.temp_max);
@@ -30,9 +31,13 @@ document.querySelector("#btnVerificarClima").addEventListener("click", async (e)
     document.querySelector('#pressao').innerHTML = `Pressão: ${pressao} mb`
     document.querySelector('#vento').innerHTML = `Vento: ${vento} km/h`
     document.querySelector('#tempo').innerHTML = `Tempo: ${tempo}`
-    document.querySelector('#fotoClima').setAttribute('src', apiBDImagemUnsplash+tempo);
+    document.getElementById("icone").setAttribute("src",`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
+    document.getElementById("imgPais").setAttribute("src", apiBandeiraPais+data.sys.country+"/flat/64.png");
     if (tempo === "céu limpo"){
-        document.querySelector("#imagemEntrada").setAttribute("src", "img/ara1.png")
+        document.querySelector("#imagemEntrada").setAttribute("src", "img/ceulimpo.jpg")
+    }
+    else{
+        document.querySelector("#imagemEntrada").setAttribute("src", "img/nublado.jpg")
     }
 });
 
