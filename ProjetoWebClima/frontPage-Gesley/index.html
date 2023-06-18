@@ -36,10 +36,10 @@
             <div>
                 <nav class="navbar bg-body-tertiary">
                     <div class="container-fluid">
-                      <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar a Cidade" aria-label="Search" id="verificarClima" >
-                        <button class="btn btn-outline-success" type="submit" onclick="">Pesquisar</button>
-                      </form>
+                      <div class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar a Cidade" aria-label="Search" id="pesquisarCidade" name="pesquisarCidade">
+                        <button class="btn btn-outline-success" type="submit" id="btnVerificarClima">Pesquisar</button>
+                      </div>
                     </div>
                   </nav>
             </div>   
@@ -50,10 +50,14 @@
                   <div class="card">
                     <img src="img/sor1.png" card-img-top alt="..." id="imagem">
                     <div class="card-body">
-                      <h5 class="card-title" id="nome">Sorocaba</h5>
-                      <p class="card-text" id="tempMax">Max. / Mín.      --/12°</p>
-                      <p class="card-text" id="umidade">Umidade             93%</p>
-                      <p class="card-text" id="pressao">Pressão       1021.7 mb</p>
+                      <h5 class="card-title" id="nomeCidade">Cidade</h5>
+                      <p class="card-text" id="temperatura">Temperatura: °</p>
+                      <p class="card-text" id="temperaturaMinMax">Max: º / Mín: º</p>
+                      <p class="card-text" id="umidade">Umidade: %</p>
+                      <p class="card-text" id="pressao">Pressão: mb</p>
+                      <p class="card-text" id="vento">Vento: km/h</p>
+                      <p class="card-text" id="tempo">Tempo: </p>
+                      <img src="" alt="" id="fotoClima">
                     </div>
                   </div>
                 </div>

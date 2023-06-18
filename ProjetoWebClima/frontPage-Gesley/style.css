@@ -114,3 +114,9 @@ body {
   .bg-body-tertiary{
     width: 23%;
   }
+
+
+#fotoClima, #fotoClimaSor, #fotoClimaVot, #fotoClimaAra, #fotoClimaPie {
+  width: 15%;
+}
+

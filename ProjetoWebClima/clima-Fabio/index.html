@@ -11,8 +11,7 @@
     <title>AgroTech</title>
 </head>
 
-<body>
-    
+<body onload="tabelasClima()">
     <header>
         <div class="background-layer"></div>
         <div>
@@ -32,50 +31,80 @@
 
     <nav>
         <ul>
-            <li><a href="../frontPage-Gesley/index.html">Início</a></li>
-            <li><a href="../clima-Fabio/index.html">Previsão</a></li>
+            <li><a href="../frontPage-Gesley/index.html">Logo</a></li>
+            <li><a href="../clima-Fabio/index.html ">Previsão</a></li>
             <li><a href="../artigos-joao-l/index.html">Notícias</a></li>
             <li><a href="../mapa-vinicius/index.html">Mapa</a></li>
             <li><a href="../sobreOProj-joao-m/index.html">Sobre nós</a></li>
         </ul>
     </nav>
 
-    <main id="content">
-        <div class="row">
-            <div>
-                <h2>
-                    Clima em Sorocaba (SP)
-                    <button class="button">Alterar</button>
-                </h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="weather-today">
-                <section class="weather-info">
-                    <h2 class="weather-city">Cidade</h2>
-                    <p class="weather-day">Day</p>
-                    <div class="weather-current">
-                        <p class="weather-indicator weather-indicator-humidity"><span class="value">50</span>%</p>
-                        <p class="weather-indicator weather-indicator-wind"><span class="value">Oeste, 5</span>m/s</p>
-                        <p class="weather-indicator weather-indicator-pressure"><span class="value">1050</span>hPa</p>
-                    </div>
-                    <img src="" alt="" class="weather-img">
-                </section>
-                <div class="weather-temp">
-                    <span class="value">25 &deg;C</span>
-                </div>
-            </div>
-            <div>
-                <section>
-
-                </section>
-            </div>
-            <div>
-                <section>
-
-                </section>
-            </div>
-        </div>
+    <main class="contentdisplay">
+        <section id="displaysection1">
+        <section>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                    <img src="" card-img-top alt="..." id="imagemSor">
+                    <div class="card-body">
+                      <h5 class="card-title" id="nomeCidadeSor">Sorocaba</h5>
+                      <p class="card-text" id="temperaturaSor">Temperatura: °</p>
+                      <p class="card-text" id="temperaturaMinMaxSor">Max. / Mín.    /12°</p>
+                      <p class="card-text" id="umidadeSor">Umidade: %</p>
+                      <p class="card-text" id="pressaoSor">Pressão: mb</p>
+                      <p class="card-text" id="ventoSor">Vento: km/h</p>
+                      <p class="card-text" id="tempoSor">Tempo: </p>
+                      <img src="" alt="" id="fotoClimaSor">
+        </section>
+        <section>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                    <img src="" card-img-top alt="..." id="imagemVot">
+                    <div class="card-body">
+                        <h5 class="card-title" id="nomeCidadeVot">Votorantim</h5>
+                        <p class="card-text" id="temperaturaVot">Temperatura: °</p>
+                        <p class="card-text" id="temperaturaMinMaxVot">Max. / Mín.    /12°</p>
+                        <p class="card-text" id="umidadeVot">Umidade: %</p>
+                        <p class="card-text" id="pressaoVot">Pressão: mb</p>
+                        <p class="card-text" id="ventoVot">Vento: km/h</p>
+                        <p class="card-text" id="tempoVot">Tempo: </p>
+                        <img src="" alt="" id="fotoClimaVot">
+        </section>
+        </section>
+        <section id="displaysection2">
+        <section>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                    <img src="" card-img-top alt="..." id="imagemAra">
+                    <div class="card-body">
+                        <h5 class="card-title" id="nomeCidadeAra">Araçoiaba da Serra</h5>
+                        <p class="card-text" id="temperaturaAra">Temperatura: °</p>
+                        <p class="card-text" id="temperaturaMinMaxAra">Max. / Mín.    /12°</p>
+                        <p class="card-text" id="umidadeAra">Umidade: %</p>
+                        <p class="card-text" id="pressaoAra">Pressão: mb</p>
+                        <p class="card-text" id="ventoAra">Vento: km/h</p>
+                        <p class="card-text" id="tempoAra">Tempo: </p>
+                        <img src="" alt="" id="fotoClimaAra">
+        
+        </section>
+        <section>   
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                    <img src="" card-img-top alt="..." id="imagem">
+                    <div class="card-body">
+                        <h5 class="card-title" id="nomeCidadePie">Piedade</h5>
+                        <p class="card-text" id="temperaturaPie">Temperatura: °</p>
+                        <p class="card-text" id="temperaturaMinMaxPie">Max. / Mín.    /12°</p>
+                        <p class="card-text" id="umidadePie">Umidade: %</p>
+                        <p class="card-text" id="pressaoPie">Pressão: mb</p>
+                        <p class="card-text" id="ventoPie">Vento: km/h</p>
+                        <p class="card-text" id="tempoPie">Tempo: </p>
+                        <img src="" alt="" id="fotoClimaPie">
+        </section>
+        </section>
     </main>
 
     <footer>
