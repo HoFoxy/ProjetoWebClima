@@ -23,8 +23,9 @@ async function tabelasClima(){
     document.querySelector('#umidadeSor').innerHTML = `Umidade: ${umidade} %`
     document.querySelector('#pressaoSor').innerHTML = `Pressão: ${pressao} mb`
     document.querySelector('#ventoSor').innerHTML = `Vento: ${vento} km/h`
-    document.querySelector('#tempoSor').innerHTML = `Tempo: ${tempo}`
+    document.querySelector('#tempoSor').innerHTML = `Tempo: ${tempo}` 
     document.querySelector('#fotoClimaSor').setAttribute('src', apiBDImagemUnsplash+tempo);
+    document.querySelector('#imagemSor').setAttribute('src', apiBDImagemUnsplash+'cidade de sorocaba');
 
     const apiClimaURLVot = `https://api.openweathermap.org/data/2.5/weather?q=votorantim&units=metric&appid=${apiKey}&lang=pt_br`;
     
@@ -46,6 +47,7 @@ async function tabelasClima(){
     document.querySelector('#ventoVot').innerHTML = `Vento: ${vento2} km/h`
     document.querySelector('#tempoVot').innerHTML = `Tempo: ${tempo2}`
     document.querySelector('#fotoClimaVot').setAttribute('src', apiBDImagemUnsplash+tempo2);
+    document.querySelector('#imagemVot').setAttribute('src', apiBDImagemUnsplash+'cidade de votorantim');
 
     const apiClimaURLAra = `https://api.openweathermap.org/data/2.5/weather?q=aracoiaba&units=metric&appid=${apiKey}&lang=pt_br`;
     
@@ -67,6 +69,7 @@ async function tabelasClima(){
     document.querySelector('#ventoAra').innerHTML = `Vento: ${vento3} km/h`
     document.querySelector('#tempoAra').innerHTML = `Tempo: ${tempo3}`
     document.querySelector('#fotoClimaAra').setAttribute('src', apiBDImagemUnsplash+tempo3);
+    document.querySelector('#imagemAra').setAttribute('src', apiBDImagemUnsplash+'cidade de Araçoiaba da Serra');
 
     const apiClimaURLPie = `https://api.openweathermap.org/data/2.5/weather?q=piedade&units=metric&appid=${apiKey}&lang=pt_br`;
     
@@ -88,4 +91,5 @@ async function tabelasClima(){
     document.querySelector('#ventoPie').innerHTML = `Vento: ${vento4} km/h`
     document.querySelector('#tempoPie').innerHTML = `Tempo: ${tempo4}`
     document.querySelector('#fotoClimaPie').setAttribute('src', apiBDImagemUnsplash+tempo4);
+    document.querySelector('#imagemPie').setAttribute('src', apiBDImagemUnsplash+'cidade de piedade');
 }
