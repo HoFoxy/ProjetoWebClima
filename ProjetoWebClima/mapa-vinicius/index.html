@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../frontPage-Gesley/style.css">
-    <script src="script.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../mapa-vinicius/style.css">
+    <script src="../mapa-vinicius/script.js" defer></script>
     <title>AgroTech</title>
 </head>
 
@@ -42,46 +43,21 @@
     </nav>
 
     <main>
-        <section id="weather-section">
-            <h2>Mapa</h2>
-            <div id="weather-data"></div>
-
-            <div class="container">
-                <div class="text">
-                  <p>A região metropolitana de Sorocaba, localizada no interior do Estado de São Paulo, possui características climáticas específicas que influenciam diretamente os produtores rurais da área. O clima na região é classificado como subtropical úmido, apresentando variações sazonais bem definidas ao longo do ano.
-
-                    Durante o verão, que vai de dezembro a março, a região experimenta um clima quente e úmido. As temperaturas podem atingir valores elevados, com médias que variam entre 25°C e 30°C. Nessa época, ocorrem chuvas frequentes, o que é benéfico para o desenvolvimento de culturas como milho, soja, feijão e hortaliças, que necessitam de umidade para seu crescimento. No entanto, é importante destacar que as chuvas intensas também podem trazer alguns desafios, como o excesso de umidade e a possibilidade de enchentes em áreas mais baixas.
-                    
-                    Com a chegada do outono, entre abril e junho, as temperaturas começam a diminuir gradualmente, com médias que variam entre 18°C e 25°C. Nessa estação, ocorre uma redução na quantidade de chuvas, tornando o clima mais ameno e seco. Essa época do ano é favorável para o plantio de culturas como batata, mandioca e frutas de clima temperado, como maçã e pêssego.
-                    
-                    O inverno, entre julho e setembro, é caracterizado por temperaturas mais baixas, especialmente durante a noite, com médias entre 10°C e 20°C. Nessa estação, ocorre uma redução significativa das chuvas, podendo afetar algumas culturas mais sensíveis à falta de água. No entanto, o inverno também é propício para o cultivo de frutas cítricas, como laranja e limão, que se adaptam bem ao clima mais frio.
-                    
-                    Com a chegada da primavera, entre outubro e novembro, as temperaturas começam a aumentar gradualmente, variando entre 20°C e 28°C. Essa estação é caracterizada pelo aumento das chuvas e pelo clima mais quente. É uma época de transição entre o inverno e o verão, sendo favorável para o plantio de diversas culturas, incluindo legumes, verduras e frutas tropicais.
-                    
-                    Além dessas características sazonais, a região metropolitana de Sorocaba também apresenta um relevo diversificado, com áreas de planície e regiões mais montanhosas. Essas variações topográficas podem influenciar o microclima local, afetando a distribuição das chuvas e as temperaturas em determinadas áreas.
-                    
-                    Portanto, para os produtores rurais da região metropolitana de Sorocaba, é essencial acompanhar as previsões meteorológicas atualizadas e adaptar as práticas agrícolas às condições climáticas específicas de cada estação. O planejamento adequado, o manejo correto da água e a seleção de culturas adaptadas às variações sazonais são fundamentais para o sucesso das atividades agrícolas na região.</p>
+        <section id="mapa">
+                <div id="btns">
+                    <button id="btntemp">Temperatura</button>
+                    <button id="btnchuva">Chuva</button>
+                    <button id="btnumidade">Umidade</button>
+                    <button id="btnpressao">Pressão</button>
+                    <button id="btnvento">Vento</button>
                 </div>
-                <div class="image">
-                  <img src="img/mapa_climatico_SP.png" alt="Imagem">
+
+                <div id="imgns">
+                    <img src="../mapa-vinicius/img/temp.PNG" alt="" id="mapaimg">
+                    <img src="../mapa-vinicius/img/temp_med.PNG" alt="" id="mapamed">
                 </div>
-              </div>
-              
-        </section>
+            </section>
 
-        <section>
-            <h2>Cidades</h2>
-            <ul id="city-list">
-                <li><a href="#" onclick="getWeather('Sorocaba')">Sorocaba</a></li>
-                <li><a href="#" onclick="getWeather('Votorantim')">Votorantim</a></li>
-                <li><a href="#" onclick="getWeather('Araçoiaba da Serra')">Araçoiaba da Serra</a></li>
-                <li><a href="#" onclick="getWeather('Piedade')">Piedade</a></li>
-            </ul>
-        </section>
-
-        <section>
-
-        </section>
     </main>
 
     <footer>
