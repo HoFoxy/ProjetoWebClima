@@ -3,13 +3,13 @@ async function noticias(){
     const noticiaapi = `https://newsdata.io/api/1/news?apikey=${apikey}&q=agronegocio&country=br`
     const noticia = await fetch(noticiaapi)
     const data = await noticia.json() 
-    link1 = data.results[0].link
+    link1 = data.results[2].link
     link2 = data.results[1].link
-    img1 = data.results[0].image_url
+    img1 = data.results[2].image_url
     img2 = data.results[1].image_url
 
-    document.querySelector("#not1").innerHTML = data.results[0].title
-    document.querySelector("#desc1").innerHTML = data.results[0].description
+    document.querySelector("#not1").innerHTML = data.results[2].title
+    document.querySelector("#desc1").innerHTML = data.results[2].description
     document.querySelector("#not2").innerHTML = data.results[1].title
     document.querySelector("#desc2").innerHTML = data.results[1].description
     
