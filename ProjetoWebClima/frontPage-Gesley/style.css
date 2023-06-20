@@ -120,4 +120,24 @@ body {
   width: 15%;
 }
 
+.row-cols-1, .container-fluid{
+  display: flex;
+  justify-content: space-around;
+}
 
+.bg-body-tertiary{
+  display: flex;
+  justify-content: space-around;
+}
+
+img{
+  object-fit: cover;
+}
+
+#weather-section{
+  text-align: center;
+}
+
+a:hover{
+  color: #FFFFFF;
+}
