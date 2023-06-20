@@ -66,3 +66,8 @@
 #link2:hover{
   color: #1b5c36;
 }
+
+.nottxt{
+  background-color: antiquewhite;
+  border: 3px ridge #1b5c36;
+}

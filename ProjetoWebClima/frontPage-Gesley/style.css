@@ -141,3 +141,18 @@ img{
 a:hover{
   color: #FFFFFF;
 }
+
+#AgroTech{
+  color: #1b5c36;
+}
+
+.imgns{
+  object-fit: cover;
+}
+
+.displaysection{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

@@ -4,15 +4,15 @@ async function noticias(){
     const noticiaapi = `https://newsdata.io/api/1/news?apikey=${apikey}&q=agronegocio&country=br`
     const noticia = await fetch(noticiaapi)
     const data = await noticia.json() 
-    link1 = data.results[3].link
-    link2 = data.results[4].link
-    img1 = data.results[3].image_url
-    img2 = data.results[4].image_url
+    link1 = data.results[0].link
+    link2 = data.results[1].link
+    img1 = data.results[0].image_url
+    img2 = data.results[1].image_url
 
-    document.querySelector("#not1").innerHTML = data.results[3].title
-    document.querySelector("#desc1").innerHTML = data.results[3].description
-    document.querySelector("#not2").innerHTML = data.results[4].title
-    document.querySelector("#desc2").innerHTML = data.results[4].description
+    document.querySelector("#not1").innerHTML = data.results[0].title
+    document.querySelector("#desc1").innerHTML = data.results[0].description
+    document.querySelector("#not2").innerHTML = data.results[1].title
+    document.querySelector("#desc2").innerHTML = data.results[1].description
     
     if(img1 == null){
         document.querySelector("#img1").setAttribute("src", "../artigos-joao-l/img/semimg.jpg")

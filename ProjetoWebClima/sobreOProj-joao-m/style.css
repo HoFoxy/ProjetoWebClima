@@ -11,6 +11,12 @@
     flex-direction: column;
 }
 
+.txt{
+    border: 3px ridge #1b5c36;
+    background-color: antiquewhite;
+}
+
+
 img{
 
     border: 2px solid rgb(42, 41, 41);
