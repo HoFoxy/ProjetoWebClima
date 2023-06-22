@@ -1,6 +1,8 @@
 #topicos{
     display: flex;
     flex-direction: row;
+    background-color: white;
+    border-radius: 5px;
 }
 .wrapper-topic{
     display: flex;
@@ -11,15 +13,15 @@
     flex-direction: column;
 }
 
-.txt{
-    border: 3px ridge #1b5c36;
-    background-color: rgb(208, 255, 221);
-}
-
-
 img{
-
     border: 2px solid rgb(42, 41, 41);
     width: 250px;
     height: 200px;
+}
+
+.txt, .topico{
+    padding-left: 10px;
+}
+#ideia{
+    padding-top: 10px;
 }
