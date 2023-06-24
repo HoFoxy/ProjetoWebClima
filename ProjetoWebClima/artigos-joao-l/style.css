@@ -46,8 +46,7 @@
 }
 
 .notimg{
-  padding-bottom: 10px;
-  max-width: none;
+  padding-bottom: 20px;
 }
 
 #link1{
@@ -69,6 +68,28 @@
 }
 
 .nottxt{
-  background-color: rgb(208, 255, 221);
+  background-color: rgb(235, 234, 234);
   border: 3px ridge #1b5c36;
+}
+
+.desc{
+  width: 300ch;
+  max-inline-size: 70ch;
+  background-color:rgb(235, 234, 234) ;
+  border: none;
+  padding: none;
+}
+
+textarea#desc1.desc{
+  width: 95%;
+}
+
+textarea#desc2.desc{
+  width: 95%;
+}
+
+
+
+details{
+  width: 95%;
 }
