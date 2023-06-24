@@ -47,6 +47,7 @@
 
 .notimg{
   padding-bottom: 10px;
+  max-width: none;
 }
 
 #link1{
