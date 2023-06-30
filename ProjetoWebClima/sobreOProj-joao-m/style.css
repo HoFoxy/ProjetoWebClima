@@ -1,9 +1,15 @@
+
 #topicos{
     display: flex;
-    flex-direction: row;
-    background-color: white;
-    border-radius: 5px;
+    flex-direction: column;
 }
+
+@media (min-width: 768px) {
+    #topicos {
+      flex-direction: row;
+    }
+  }
+
 .wrapper-topic{
     display: flex;
     flex-direction: column;
@@ -14,9 +20,11 @@
 }
 
 img{
-    border: 2px solid rgb(42, 41, 41);
-    width: 250px;
-    height: 200px;
+    border: 1px solid rgb(42, 41, 41);
+    width: 19em;
+    height: 12em;
+    margin-left: 15px;
+    object-fit: cover;
 }
 
 .txt, .topico{
@@ -24,4 +32,10 @@ img{
 }
 #ideia{
     padding-top: 10px;
+}
+
+.descricao{
+    background-color: rgb(235, 234, 234);
+    border-radius: 10px;
+    padding-left: 15px;
 }
