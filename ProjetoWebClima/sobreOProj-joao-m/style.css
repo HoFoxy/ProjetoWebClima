@@ -1,0 +1,41 @@
+
+#topicos{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    #topicos {
+      flex-direction: row;
+    }
+  }
+
+.wrapper-topic{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper-img{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    border: 1px solid rgb(42, 41, 41);
+    width: 19em;
+    height: 12em;
+    margin-left: 15px;
+    object-fit: cover;
+}
+
+.txt, .topico{
+    padding-left: 10px;
+}
+#ideia{
+    padding-top: 10px;
+}
+
+.descricao{
+    background-color: rgb(235, 234, 234);
+    border-radius: 10px;
+    padding-left: 15px;
+}
